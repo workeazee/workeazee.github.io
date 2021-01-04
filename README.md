@@ -6,6 +6,7 @@ WorkEazee Website
 # Getting Started
 
 You will need to perform the following steps to setup the project website.
+
 <br/>
 
 ## Prerequisites
@@ -19,6 +20,7 @@ You will need to perform the following steps to setup the project website.
 - [Visual Studio Code](https://code.visualstudio.com/), we recommend VSC for coding but you can use any text editor you like.
 
 - [Postman](https://www.getpostman.com/) used to test API urls and methods.
+
 <br/>
 
 ## Fork the app
@@ -30,4 +32,5 @@ You will need to perform the following steps to setup the project website.
 3. Select `forks` in projects list and make sure to check `All branches` checkbox.
 
 4. After creating a fork, clone from your fork
+
 <br/>
