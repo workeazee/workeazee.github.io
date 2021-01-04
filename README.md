@@ -2,10 +2,12 @@
 WorkEazee Website
 
 <br/>
+
 # Getting Started
 
 You will need to perform the following steps to setup the project website.
 <br/>
+
 ## Prerequisites
 
 - You need to have an account on GitHub
