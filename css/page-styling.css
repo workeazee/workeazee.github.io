@@ -1,6 +1,7 @@
 body{
     margin:0;
-    background-color: #f3f2ef;
+    background-color: #f3f2ef;  /* Background color of whole body */
+    
     font-family: 'Lora', serif;
 }
 
@@ -12,7 +13,7 @@ body button, input {
     color: #595c5f;
 }
 
-.nav-bar{
+/* .nav-bar{
     display: flex;
     height: 100;
     border: 1px solid;
@@ -60,7 +61,157 @@ body button, input {
 
 .nav-bar .nav-tabs .show-options {
     display: none;
+} */
+
+
+
+/* Navbar Class Section */
+
+
+.page-navbar
+{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    /* background-color: #ffbe61; */
+    background-color: transparent;
+    text-align:center;
+    vertical-align:middle;
+    top:0rem;
+    
 }
+
+/* Navbar Buttons */
+.btn-outline-mycolor {
+    color:#f79431;
+    background-color: transparent;
+    background-image: none;
+    border-color:#f79431;
+}
+
+.btn-outline-mycolor:hover 
+{
+    color: #fff;
+    background-color:#f79431;
+    border-color:#f79431;
+}
+
+/* Navbar Padding */
+.navpadding
+{
+    font-size: 1.3rem;
+    padding-left: 0.8rem;
+    
+}
+
+.ncolor
+{
+    color: white;
+}
+
+.ncolor:hover
+{
+    color: #f79431;
+}
+
+.formpadding
+{
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+}
+
+/* CSS Styling for workeazee background center logo*/
+.background-logo
+{
+    width: 100%;
+    opacity: 0.9;
+    /* margin-top: 0; */
+}
+
+
+
+/* MID SECTION - Sections after navbar */
+
+/* Sections Heading */
+.main-heading
+{
+    
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.mid-section
+{
+    /* margin-top: 60px; */
+    /* padding-top: 8rem; */
+    /* margin-bottom: 8rem; */
+    /* padding-top: 8rem; */
+}
+
+/* FOOTER SECTION */
+
+/* .colorfooter
+{
+    background-color:#e3e1e1;
+} */
+
+.handlefooter
+{
+    text-align: center;
+    
+}
+
+.copyrighttext
+{
+    text-align: center;
+}
+
+.footer-icons
+{
+	display: inline;
+	float: left;
+	padding: 0.65rem 0;
+    width: 100%;
+    color: black;
+    padding-bottom: 2rem;
+}
+
+.footer-icons a
+{
+	border: 1px solid #19191a;
+	border-radius: 50px;
+	color: #19191a;
+	display: inline-block;
+	font-size: 12px;
+	margin-right: 10px;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out 0s;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 15px;
+}
+
+.footer-icons a:hover
+{
+    color: #f79431;
+    border: 1px solid#f79431;
+}
+
+.footer-logo
+{
+    text-align: center;
+    width: 10rem;
+    height: 10rem;
+    /* margin-bottom: -3rem; */
+}
+
+
+/********************/
+/* RESPONSIVE SECTION - Website for other device*/
+/*******************/
 
 @media only screen
 and (max-device-width : 768px){
