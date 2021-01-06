@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  background-color: #f3f2ef; /* Background color of whole body */
+  font-family: "Lora", serif;
+}
+
+body button,
+input {
+  font-family: inherit;
+}
+
+::placeholder {
+  color: #595c5f;
+}
+
+/* .nav-bar{
+    display: flex;
+    height: 100;
+    border: 1px solid;
+    justify-content: space-between;
+}
+
+.nav-bar .company-name img{
+    height: 100;
+    width: 100;
+    padding-left: 25px;
+}
+
+.nav-bar .nav-tabs .tabss{
+    display: flex;
+    height: 80px;
+}
+
+.nav-bar .nav-tabs{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.nav-bar .nav-tabs .tabss .tab{
+    height: 100%;
+    width: 150px;
+    margin: auto;
+    margin-right: 0;
+}
+
+.nav-bar .nav-tabs .tabss .tab .nav-btn{
+    padding: 14px 16px;
+    font-size: 16px;
+    background: #ec900f;
+    height: inherit;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    overflow: auto;
+    width: 100%;
+}
+
+.nav-bar .nav-tabs .tabss .tab:hover {
+    background-color: #e8b46d;
+}
+
+.nav-bar .nav-tabs .show-options {
+    display: none;
+} */
+
+/* Navbar Class Section */
+
+.page-navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: transparent;
+  text-align: center;
+  vertical-align: middle;
+  top: 0rem;
+}
+
+.page-navbar.scrolled {
+  color: #000000;
+  background-color: #f3f2ef;
+  border-color: #080808;
+  box-shadow: 0 0 0.7rem rgba(0,0,0,.8);
+}
+
+/* Navbar Buttons */
+.btn-outline-mycolor {
+  color: #f79431;
+  background-color: transparent;
+  background-image: none;
+  border-color: #f79431;
+}
+
+.btn-outline-mycolor:hover {
+  color: #fff;
+  background-color: #f79431;
+  border-color: #f79431;
+}
+
+/* Navbar Padding */
+.navpadding {
+  font-size: 1.3rem;
+  padding-left: 0.8rem;
+}
+
+.page-navbar.scrolled .ncolor {
+  color: #000000;
+}
+
+.ncolor {
+  color: #ffffff;
+}
+
+.page-navbar.scrolled .ncolor:hover {
+  color: #f79431;
+}
+
+.ncolor:hover {
+  color: #f79431;
+}
+
+.formpadding {
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+}
+
+/* CSS Styling for workeazee background center logo*/
+.background-logo {
+  width: 100%;
+  opacity: 0.9;
+  /* margin-top: 0; */
+}
+
+/* MID SECTION - Sections after navbar */
+
+/* Sections Heading */
+.main-heading {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* FOOTER SECTION */
+
+/* .colorfooter
+{
+    background-color:#e3e1e1;
+} */
+
+.handlefooter {
+  text-align: center;
+}
+
+.copyrighttext {
+  text-align: center;
+}
+
+.footer-icons {
+  display: inline;
+  float: left;
+  padding: 0.65rem 0;
+  width: 100%;
+  color: black;
+  padding-bottom: 2rem;
+}
+
+.footer-icons a {
+  border: 0.075rem solid #19191a;
+  border-radius: 10rem;
+  color: #19191a;
+  display: inline-block;
+  margin-right: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out 0s;
+  width: 2.25rem;
+  height: 2.25rem;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+
+.footer-icons a:hover {
+  color: #f79431;
+  border: 0.075rem solid#f79431;
+}
+
+.footer-logo {
+  text-align: center;
+  width: 10rem;
+  height: 10rem;
+  /* margin-bottom: -3rem; */
+}
+
+/********************/
+/* RESPONSIVE SECTION - Website for other device*/
+/*******************/
+
+@media only screen and (max-device-width: 768px) {
+  .nav-bar .nav-tabs .show-options {
+    display: flex;
+    align-items: center;
+    background: #ec900f;
+    height: 80px;
+    top: 20px;
+    padding: 0px 20px;
+    border: 0.075rem solid;
+    border-radius: 10rem;
+  }
+
+  .nav-bar .nav-tabs .show-options span {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+
+  .nav-bar .nav-tabs .tabss {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+  }
+
+  .nav-bar .nav-tabs .tabss .tab {
+    height: auto;
+    margin: 0 0 0 auto;
+    text-align: right;
+  }
+
+  .nav-bar .nav-tabs .tabss .tab .nav-btn {
+    border: 1px solid;
+    border-radius: 5px;
+  }
+}
