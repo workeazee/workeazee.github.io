@@ -15,7 +15,7 @@ You will need to perform the following steps to setup the project website.
 
 * [Git](http://git-scm.com) and/or the **GitHub app** (for [Mac](http://mac.github.com) or [Windows](http://windows.github.com)). [GitHub's Guide to Installing Git](https://help.github.com/articles/set-up-git) is a good source of information.
 
-- [Chrome](https://www.google.com/chrome/browser/desktop/index.html), we use Chrome to run our tests.
+- [Chrome](https://www.google.com/chrome/browser/desktop/index.html), or any other web browser.
 
 - [Visual Studio Code](https://code.visualstudio.com/), we recommend VSC for coding but you can use any text editor you like.
 
@@ -29,8 +29,6 @@ You will need to perform the following steps to setup the project website.
 
 2. Choose a name for your repository (`workeazee.firstname.lastname`)
 
-3. Select `forks` in projects list and make sure to check `All branches` checkbox.
-
-4. After creating a fork, clone from your fork
+3. After creating a fork, clone from your fork
 
 <br/>

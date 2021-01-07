@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
- <!-- <style>
+  <!-- <style>
   body,
   html {
    height: 100%;
@@ -42,167 +42,261 @@
    width: 40%;
   }
  </style> -->
- <head>
-  <meta charset="utf-8">
-  <title>WorkEazee</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WorkEazee</title>
 
-  
-  <!-- CSS Style Sheets-->
+    <!-- CSS Style Sheets-->
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/page-styling.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
 
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet" />
-  <link rel="icon" href="images/workeazee_favicon_circle.png" type="image/png" sizes="32x32" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="images/workeazee_favicon_circle.png"
+      type="image/png"
+      sizes="32x32"
+    />
 
+    <!-- Boostrap Script files -->
 
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
 
+    <!-- Font Awesome -->
 
-  <!-- Boostrap Script files -->
+    <link rel="stylesheet" href="css/all.css" />
+    <script src="js/index.js"></script>
+  </head>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
- 
+  <body>
+    <!-- NAVBAR SECTION STARTS HERE -->
+    <nav class="navbar navbar-expand-lg page-navbar">
+      <a class="navbar-brand" href="#"
+        ><img
+          src="images/workeazee_logo_mod.png"
+          width="120"
+          height="60"
+          alt="Company Logo"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <!-- Font Awesome -->
-  
-  <link rel="stylesheet" href="css/all.css">
-
-</head>
-
- <body>
-     
-    <!-- NAVBAR SECTION -->
-
-    <div class="">
-        <div class="">
-            <nav class="navbar navbar-expand-lg page-navbar">
-                <a class="navbar-brand" href="#"><img src="images/workeazee_logo_mod.png" width="120" height="60" alt="Company Logo"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-      
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active navpadding">
-                  <a class="nav-link ncolor" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item navpadding">
-                  <a class="nav-link ncolor" href="#Features">Features</a>
-                </li>
-                <li class="nav-item navpadding">
-                    <a class="nav-link ncolor" href="#WorkFlow">Flow</a>
-                  </li>
-                <li class="nav-item navpadding">
-                    <a class="nav-link ncolor" href="#Reviews">Reviews</a>
-                  </li>
-                  <li class="nav-item navpadding">
-                    <a class="nav-link ncolor" href="#Pricing">Pricing</a>
-                  </li>
-                  <li class="nav-item navpadding">
-                    <a class="nav-link ncolor" href="#ContactUs">Contact Us</a>
-                  </li>
-                
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
-                <button type="button" class="btn btn-outline-mycolor navbtncolor formpadding">Request Demo</button>
-                <button class="btn btn-outline-success my-2 my-sm-0 formpadding" type="submit">Login</button>
-              </form>
-            </div>
-      </nav>
-   </div>
-
-   <!-- HOME PAGE SECTION -->
-   <div>
-    <img class="background-logo" src="images/home_background.jpeg"Background logo">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active navpadding">
+            <a class="nav-link ncolor" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item navpadding">
+            <a class="nav-link ncolor" href="#Features">Features</a>
+          </li>
+          <li class="nav-item navpadding">
+            <a class="nav-link ncolor" href="#WorkFlow">Flow</a>
+          </li>
+          <li class="nav-item navpadding">
+            <a class="nav-link ncolor" href="#Reviews">Reviews</a>
+          </li>
+          <li class="nav-item navpadding">
+            <a class="nav-link ncolor" href="#Pricing">Pricing</a>
+          </li>
+          <li class="nav-item navpadding">
+            <a class="nav-link ncolor" href="#ContactUs">Contact Us</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+          <button
+            type="button"
+            class="btn btn-outline-mycolor navbtncolor formpadding"
+          >
+            Request Demo
+          </button>
+          <button
+            class="btn btn-outline-success my-2 my-sm-0 formpadding"
+            type="submit"
+          >
+            Login
+          </button>
+        </form>
+      </div>
+    </nav>
+    <!-- NAVBAR SECTION ENDS HERE -->
+    <!-- HOME PAGE SECTION STARTS HERE  -->
+    <div>
+      <img
+        class="background-logo"
+        src="images/home_background.jpeg"
+        alt="background
+        logo"
+      />
     </div>
+    <!-- HOME PAGE SECTION ENDS HERE  -->
 
-   <div class="mid-section">
-
-   <!-- HOME PAGE SECTION -->
-    <!-- <div>
-        <img class="background-logo" src="images/Background.jpeg" alt="Background logo">
-
-
-    </div> -->
-
-   
-    <!-- FEATURES SECTION -->
-    <div class="container">
+    <!-- MID SECTION STARTS HERE  -->
+    <div class="mid-section">
+      <!-- FEATURES SECTION -->
+      <div class="container">
         <h1 id="Features" class="main-heading">Features</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sodales mauris turpis, sed maximus magna egestas vitae. Vestibulum lobortis ligula rhoncus diam consectetur, vitae efficitur nibh fringilla. Sed gravida porttitor molestie. Sed pellentesque lectus sed lacinia accumsan. Sed condimentum arcu risus, non convallis eros tincidunt et. Curabitur elementum mi vitae elit accumsan aliquet. Nam pellentesque molestie pulvinar. Nullam id mauris posuere, sagittis lectus quis, commodo ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus eros metus, sit amet volutpat lorem bibendum ac. </p>
-    </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+          sodales mauris turpis, sed maximus magna egestas vitae. Vestibulum
+          lobortis ligula rhoncus diam consectetur, vitae efficitur nibh
+          fringilla. Sed gravida porttitor molestie. Sed pellentesque lectus sed
+          lacinia accumsan. Sed condimentum arcu risus, non convallis eros
+          tincidunt et. Curabitur elementum mi vitae elit accumsan aliquet. Nam
+          pellentesque molestie pulvinar. Nullam id mauris posuere, sagittis
+          lectus quis, commodo ante. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Morbi faucibus eros metus, sit amet volutpat lorem
+          bibendum ac.
+        </p>
+      </div>
 
+      <!-- FLOW SECTION -->
 
-    <!-- FLOW SECTION -->
-
-    <div class="container">
+      <div class="container">
         <h1 id="WorkFlow" class="main-heading">Work Flow</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sodales mauris turpis, sed maximus magna egestas vitae. Vestibulum lobortis ligula rhoncus diam consectetur, vitae efficitur nibh fringilla. Sed gravida porttitor molestie. Sed pellentesque lectus sed lacinia accumsan. Sed condimentum arcu risus, non convallis eros tincidunt et. Curabitur elementum mi vitae elit accumsan aliquet. Nam pellentesque molestie pulvinar. Nullam id mauris posuere, sagittis lectus quis, commodo ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus eros metus, sit amet volutpat lorem bibendum ac. </p>
-    </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+          sodales mauris turpis, sed maximus magna egestas vitae. Vestibulum
+          lobortis ligula rhoncus diam consectetur, vitae efficitur nibh
+          fringilla. Sed gravida porttitor molestie. Sed pellentesque lectus sed
+          lacinia accumsan. Sed condimentum arcu risus, non convallis eros
+          tincidunt et. Curabitur elementum mi vitae elit accumsan aliquet. Nam
+          pellentesque molestie pulvinar. Nullam id mauris posuere, sagittis
+          lectus quis, commodo ante. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Morbi faucibus eros metus, sit amet volutpat lorem
+          bibendum ac.
+        </p>
+      </div>
 
-    <!-- REVIEWS SECTION -->
+      <!-- REVIEWS SECTION -->
 
-    <div class="container">
+      <div class="container">
         <h1 id="Reviews" class="main-heading">Reviews or Testimonials</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sodales mauris turpis, sed maximus magna egestas vitae. Vestibulum lobortis ligula rhoncus diam consectetur, vitae efficitur nibh fringilla. Sed gravida porttitor molestie. Sed pellentesque lectus sed lacinia accumsan. Sed condimentum arcu risus, non convallis eros tincidunt et. Curabitur elementum mi vitae elit accumsan aliquet. Nam pellentesque molestie pulvinar. Nullam id mauris posuere, sagittis lectus quis, commodo ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus eros metus, sit amet volutpat lorem bibendum ac. </p>
-    </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+          sodales mauris turpis, sed maximus magna egestas vitae. Vestibulum
+          lobortis ligula rhoncus diam consectetur, vitae efficitur nibh
+          fringilla. Sed gravida porttitor molestie. Sed pellentesque lectus sed
+          lacinia accumsan. Sed condimentum arcu risus, non convallis eros
+          tincidunt et. Curabitur elementum mi vitae elit accumsan aliquet. Nam
+          pellentesque molestie pulvinar. Nullam id mauris posuere, sagittis
+          lectus quis, commodo ante. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Morbi faucibus eros metus, sit amet volutpat lorem
+          bibendum ac.
+        </p>
+      </div>
 
-    <!-- PRICING SECTION -->
+      <!-- PRICING SECTION -->
 
-    <div class="container">
+      <div class="container">
         <h1 id="Pricing" class="main-heading">Pricing</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sodales mauris turpis, sed maximus magna egestas vitae. Vestibulum lobortis ligula rhoncus diam consectetur, vitae efficitur nibh fringilla. Sed gravida porttitor molestie. Sed pellentesque lectus sed lacinia accumsan. Sed condimentum arcu risus, non convallis eros tincidunt et. Curabitur elementum mi vitae elit accumsan aliquet. Nam pellentesque molestie pulvinar. Nullam id mauris posuere, sagittis lectus quis, commodo ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus eros metus, sit amet volutpat lorem bibendum ac. </p>
-    </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+          sodales mauris turpis, sed maximus magna egestas vitae. Vestibulum
+          lobortis ligula rhoncus diam consectetur, vitae efficitur nibh
+          fringilla. Sed gravida porttitor molestie. Sed pellentesque lectus sed
+          lacinia accumsan. Sed condimentum arcu risus, non convallis eros
+          tincidunt et. Curabitur elementum mi vitae elit accumsan aliquet. Nam
+          pellentesque molestie pulvinar. Nullam id mauris posuere, sagittis
+          lectus quis, commodo ante. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Morbi faucibus eros metus, sit amet volutpat lorem
+          bibendum ac.
+        </p>
+      </div>
 
-    <!-- CONTACT US SECTION -->
+      <!-- CONTACT US SECTION -->
 
-    <div class="container">
+      <div class="container">
         <h1 id="ContactUs" class="main-heading">Contact Us</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sodales mauris turpis, sed maximus magna egestas vitae. Vestibulum lobortis ligula rhoncus diam consectetur, vitae efficitur nibh fringilla. Sed gravida porttitor molestie. Sed pellentesque lectus sed lacinia accumsan. Sed condimentum arcu risus, non convallis eros tincidunt et. Curabitur elementum mi vitae elit accumsan aliquet. Nam pellentesque molestie pulvinar. Nullam id mauris posuere, sagittis lectus quis, commodo ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus eros metus, sit amet volutpat lorem bibendum ac. </p>
-    </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+          sodales mauris turpis, sed maximus magna egestas vitae. Vestibulum
+          lobortis ligula rhoncus diam consectetur, vitae efficitur nibh
+          fringilla. Sed gravida porttitor molestie. Sed pellentesque lectus sed
+          lacinia accumsan. Sed condimentum arcu risus, non convallis eros
+          tincidunt et. Curabitur elementum mi vitae elit accumsan aliquet. Nam
+          pellentesque molestie pulvinar. Nullam id mauris posuere, sagittis
+          lectus quis, commodo ante. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Morbi faucibus eros metus, sit amet volutpat lorem
+          bibendum ac.
+        </p>
+      </div>
 
-    <!-- FOOTER SECTION -->
-    <!-- Start footer -->
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+      <!-- FOOTER SECTION -->
+      <!-- Start footer -->
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
+    <!-- MID SECTION STARTS HERE  -->
 
     <!-- FOOTER SECTION STARTS HERE -->
     <footer>
+      <div class="container colorfooter">
+        <div class="handlefooter">
+          <img
+            class="footer-logo"
+            src="images/workEazee_with_stroke.png"
+            alt="stroke logo"
+          />
+        </div>
 
-    <div class="container colorfooter">
-            <div class="handlefooter">
-                    <img class="footer-logo" src="images/workEazee_with_stroke.png" alt="stroke logo">
-            </div>
+        <div class="handlefooter">
+          <div class="footer-icons">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
 
-            <div class="handlefooter">
-                <div class="footer-icons">
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a href=""><i class="fas fa-envelope"></i></a>       
-                </div>
-            </div>
-            
-            <div class="copyrighttext">
-                <p class="">Copyright 2021, WorkEazee | All rights reserved</p>
-            </div>    
-            
-    </div>
+        <div class="copyrighttext">
+          <p class="">Copyright 2021, WorkEazee | All rights reserved</p>
+        </div>
+      </div>
     </footer>
     <!-- FOOTER SECTION ENDS HERE -->
-    </div>
-    
- </body>
+  </body>
 </html>
