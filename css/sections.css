@@ -1,0 +1,23 @@
+/* MID SECTION - Sections after navbar */
+
+.feature-class,
+.workflow-class,
+.review-class,
+.pricing-class,
+.contact-us-class {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* height: 15rem; Change this to change the length of the mid-section's containers for Navbar */
+}
+
+/* .text-part {
+  height: 30%; /* Change this to change the length of the mid-section's containers for Navbar
+} */
+
+/* Sections Heading */
+.main-heading {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}

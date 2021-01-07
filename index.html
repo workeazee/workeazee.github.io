@@ -1,47 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <!-- <style>
-  body,
-  html {
-   height: 100%;
-   margin: 0;
-   font-style: italic;
-  }
-
-  .bgimg {
-   background: #f3f2ef;
-   height: 100%;
-   background-position: center;
-   background-size: cover;
-   position: relative;
-   font-size: 28px;
-  }
-
-  .topleft {
-   position: absolute;
-   top: 0;
-   left: 16px;
-  }
-
-  .bottomleft {
-   position: absolute;
-   bottom: 0;
-   left: 16px;
-  }
-
-  .middle {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   text-align: center;
-  }
-
-  hr {
-   margin: auto;
-   width: 40%;
-  }
- </style> -->
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,6 +14,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/sections.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -88,14 +50,14 @@
     ></script>
 
     <!-- Font Awesome -->
-
     <link rel="stylesheet" href="css/all.css" />
+
     <script src="js/index.js"></script>
   </head>
 
   <body>
     <!-- NAVBAR SECTION STARTS HERE -->
-    <nav class="navbar navbar-expand-lg page-navbar">
+    <nav class="navbar navbar-light navbar-expand-lg page-navbar">
       <a class="navbar-brand" href="#"
         ><img
           src="images/workEazee_with_stroke_mod.png"
@@ -115,7 +77,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto handlenav">
+        <ul class="navbar-nav mr-auto">
           <li class="nav-item active navpadding">
             <a class="nav-link ncolor" href="#"
               >Home <span class="sr-only">(current)</span></a
@@ -156,7 +118,7 @@
     </nav>
     <!-- NAVBAR SECTION ENDS HERE -->
     <!-- HOME PAGE SECTION STARTS HERE  -->
-    <div>
+    <div class="home-page">
       <img
         class="background-logo"
         src="images/home_background.jpeg"
@@ -176,13 +138,13 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
             sodales mauris turpis, sed maximus magna egestas vitae. Vestibulum
             lobortis ligula rhoncus diam consectetur, vitae efficitur nibh
-            fringilla. Sed gravida porttitor molestie. Sed pellentesque lectus sed
-            lacinia accumsan. Sed condimentum arcu risus, non convallis eros
-            tincidunt et. Curabitur elementum mi vitae elit accumsan aliquet. Nam
-            pellentesque molestie pulvinar. Nullam id mauris posuere, sagittis
-            lectus quis, commodo ante. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Morbi faucibus eros metus, sit amet volutpat lorem
-            bibendum ac.
+            fringilla. Sed gravida porttitor molestie. Sed pellentesque lectus
+            sed lacinia accumsan. Sed condimentum arcu risus, non convallis eros
+            tincidunt et. Curabitur elementum mi vitae elit accumsan aliquet.
+            Nam pellentesque molestie pulvinar. Nullam id mauris posuere,
+            sagittis lectus quis, commodo ante. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Morbi faucibus eros metus, sit amet
+            volutpat lorem bibendum ac.
           </p>
         </div>
       </div>
@@ -191,40 +153,40 @@
 
       <div id="workflow" class="container workflow-class">
         <div class="text-part">
-            <h1 class="main-heading">Work Flow</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              sodales mauris turpis, sed maximus magna egestas vitae. Vestibulum
-              lobortis ligula rhoncus diam consectetur, vitae efficitur nibh
-              fringilla. Sed gravida porttitor molestie. Sed pellentesque lectus sed
-              lacinia accumsan. Sed condimentum arcu risus, non convallis eros
-              tincidunt et. Curabitur elementum mi vitae elit accumsan aliquet. Nam
-              pellentesque molestie pulvinar. Nullam id mauris posuere, sagittis
-              lectus quis, commodo ante. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Morbi faucibus eros metus, sit amet volutpat lorem
-              bibendum ac.
-            </p>
-          </div>
+          <h1 class="main-heading">Work Flow</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            sodales mauris turpis, sed maximus magna egestas vitae. Vestibulum
+            lobortis ligula rhoncus diam consectetur, vitae efficitur nibh
+            fringilla. Sed gravida porttitor molestie. Sed pellentesque lectus
+            sed lacinia accumsan. Sed condimentum arcu risus, non convallis eros
+            tincidunt et. Curabitur elementum mi vitae elit accumsan aliquet.
+            Nam pellentesque molestie pulvinar. Nullam id mauris posuere,
+            sagittis lectus quis, commodo ante. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Morbi faucibus eros metus, sit amet
+            volutpat lorem bibendum ac.
+          </p>
+        </div>
       </div>
 
       <!-- REVIEWS SECTION -->
 
       <div id="review" class="container review-class">
         <div class="text-part">
-            <h1 class="main-heading">Reviews or Testimonials</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              sodales mauris turpis, sed maximus magna egestas vitae. Vestibulum
-              lobortis ligula rhoncus diam consectetur, vitae efficitur nibh
-              fringilla. Sed gravida porttitor molestie. Sed pellentesque lectus sed
-              lacinia accumsan. Sed condimentum arcu risus, non convallis eros
-              tincidunt et. Curabitur elementum mi vitae elit accumsan aliquet. Nam
-              pellentesque molestie pulvinar. Nullam id mauris posuere, sagittis
-              lectus quis, commodo ante. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Morbi faucibus eros metus, sit amet volutpat lorem
-              bibendum ac.
-            </p>
-          </div>
+          <h1 class="main-heading">Reviews or Testimonials</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            sodales mauris turpis, sed maximus magna egestas vitae. Vestibulum
+            lobortis ligula rhoncus diam consectetur, vitae efficitur nibh
+            fringilla. Sed gravida porttitor molestie. Sed pellentesque lectus
+            sed lacinia accumsan. Sed condimentum arcu risus, non convallis eros
+            tincidunt et. Curabitur elementum mi vitae elit accumsan aliquet.
+            Nam pellentesque molestie pulvinar. Nullam id mauris posuere,
+            sagittis lectus quis, commodo ante. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Morbi faucibus eros metus, sit amet
+            volutpat lorem bibendum ac.
+          </p>
+        </div>
       </div>
 
       <!-- PRICING SECTION -->
@@ -236,13 +198,13 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
             sodales mauris turpis, sed maximus magna egestas vitae. Vestibulum
             lobortis ligula rhoncus diam consectetur, vitae efficitur nibh
-            fringilla. Sed gravida porttitor molestie. Sed pellentesque lectus sed
-            lacinia accumsan. Sed condimentum arcu risus, non convallis eros
-            tincidunt et. Curabitur elementum mi vitae elit accumsan aliquet. Nam
-            pellentesque molestie pulvinar. Nullam id mauris posuere, sagittis
-            lectus quis, commodo ante. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Morbi faucibus eros metus, sit amet volutpat lorem
-            bibendum ac.
+            fringilla. Sed gravida porttitor molestie. Sed pellentesque lectus
+            sed lacinia accumsan. Sed condimentum arcu risus, non convallis eros
+            tincidunt et. Curabitur elementum mi vitae elit accumsan aliquet.
+            Nam pellentesque molestie pulvinar. Nullam id mauris posuere,
+            sagittis lectus quis, commodo ante. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Morbi faucibus eros metus, sit amet
+            volutpat lorem bibendum ac.
           </p>
         </div>
       </div>
@@ -256,13 +218,13 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
             sodales mauris turpis, sed maximus magna egestas vitae. Vestibulum
             lobortis ligula rhoncus diam consectetur, vitae efficitur nibh
-            fringilla. Sed gravida porttitor molestie. Sed pellentesque lectus sed
-            lacinia accumsan. Sed condimentum arcu risus, non convallis eros
-            tincidunt et. Curabitur elementum mi vitae elit accumsan aliquet. Nam
-            pellentesque molestie pulvinar. Nullam id mauris posuere, sagittis
-            lectus quis, commodo ante. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Morbi faucibus eros metus, sit amet volutpat lorem
-            bibendum ac.
+            fringilla. Sed gravida porttitor molestie. Sed pellentesque lectus
+            sed lacinia accumsan. Sed condimentum arcu risus, non convallis eros
+            tincidunt et. Curabitur elementum mi vitae elit accumsan aliquet.
+            Nam pellentesque molestie pulvinar. Nullam id mauris posuere,
+            sagittis lectus quis, commodo ante. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Morbi faucibus eros metus, sit amet
+            volutpat lorem bibendum ac.
           </p>
         </div>
       </div>

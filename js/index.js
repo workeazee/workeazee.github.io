@@ -7,5 +7,6 @@ $(document).ready(function () {
     } else {
       $(".navbar").removeClass("scrolled");
     }
+    $(".navbar-collapse.collapse.show").removeClass("show");
   });
 });
