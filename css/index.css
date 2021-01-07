@@ -13,8 +13,6 @@ input {
   color: #595c5f;
 }
 
-
-
 /* .nav-bar{
     display: flex;
     height: 100;
@@ -89,8 +87,7 @@ input {
   box-shadow: 0 0 0.7rem rgba(0,0,0,.8);
 }
 
-.handlenav
-{
+.handlenav {
   display: flex;
   justify-content: right;
   list-style: none;
@@ -150,7 +147,6 @@ input {
 }
 
 /* MID SECTION - Sections after navbar */
-
 
 .feature-class, .workflow-class, .review-class, .pricing-class, .contact-us-class
 {
@@ -234,6 +230,7 @@ html
 /********************/
 /* RESPONSIVE SECTION - Website for other device*/
 /*******************/
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-device-width: 768px) {
