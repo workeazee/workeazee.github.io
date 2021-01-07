@@ -1,0 +1,29 @@
+/********************/
+/* RESPONSIVE SECTION - Website for small mobile devices*/
+/*******************/
+
+@media only screen and (max-device-width: 768px) {
+  .navbar-light {
+    background-color: #f3f2ef;
+    color: #000000;
+    text-align: center;
+    box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.8);
+    padding: 0.5rem;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #000000;
+  }
+
+  .navbar-light .navbar-nav .active .nav-link {
+    color: #000000;
+  }
+
+  .navbar-collapse.collapse.show ul li {
+    border-bottom: 0.05rem solid #595c5f;
+  }
+
+  .home-page {
+    padding-top: 5.25rem;
+  }
+}
