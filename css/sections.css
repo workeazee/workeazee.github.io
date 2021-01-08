@@ -24,41 +24,34 @@
 
 /* WHY WORKEAZEE SECTIONS STARTS HERE */
 
-.fancy-head-text
-{
-  color:  #f79431;
+.fancy-head-text {
+  color: #f79431;
 }
 
-.why-workeazee-class
-{
+.why-workeazee-class {
   padding-top: 3rem;
 }
 
-.why-workeazee-head-text
-{
+.why-workeazee-head-text {
   padding-bottom: 3rem;
 }
 
-.handle-gif-image
-{
+.handle-gif-image {
   height: 15rem;
   width: 23rem;
 }
 
-.handle-gif-image2
-{
+.handle-gif-image2 {
   height: 15rem;
   width: 15rem;
 }
 
-.why-workeazee-text-content
-{
+.why-workeazee-text-content {
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
 
 /* WHY WORKEAZEE SECTIONS ENDS HERE */
-
 
 /* AVAILABLE ON ANY DEVICE SECTION STARTS HERE */
 
@@ -70,7 +63,7 @@
 .any-device-img {
   height: 18.5rem;
   width: 18.75rem;
-  background-color: #f3f2ef;
+  background-color: #ffffff;
 }
 
 .any-device-text {
