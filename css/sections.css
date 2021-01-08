@@ -21,3 +21,64 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
+/* AVAILABLE ON ANY DEVICE SECTION STARTS HERE */
+
+.any-device-class {
+  padding-top: 2rem;
+  padding-bottom: 3.5rem;
+}
+
+.any-device-img {
+  height: 18.5rem;
+  width: 18.75rem;
+  background-color: #f3f2ef;
+}
+
+.any-device-text {
+  padding-top: 1.5rem;
+}
+
+.any-device-head-text {
+  padding-top: 2.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.playstore-logo {
+  padding-top: 1.5rem;
+  height: 6rem;
+  width: 10rem;
+}
+
+/* AVAILABLE ON ANY DEVICE SECTION ENDS HERE */
+
+/* FREE DEMO BUTTON STARTS*/
+
+.free-demo-text {
+  padding-bottom: 2rem;
+  /* font-size: 2rem; */
+}
+
+.free-demo-class {
+  /* margin-top: 1rem; */
+  padding-top: 3.5rem;
+  padding-bottom: 2.5rem;
+  margin-bottom: 2rem;
+  background-color: #e8e8e8;
+  width: 100%;
+}
+
+.free-demo-button {
+  font-size: 1rem;
+  color: #fff;
+  background-color: #f79431;
+  border-color: #f79431;
+}
+
+.free-demo-button:hover {
+  color: #fff;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+/* FREE DEMO BUTTON ENDS*/
