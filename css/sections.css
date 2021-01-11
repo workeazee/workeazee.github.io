@@ -21,6 +21,86 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+/* PRICING SECTION STARTS HERE */
+.form-input-number-of-users {
+  margin: auto;
+}
+
+.pricing-cards {
+  margin: 1.5rem 0;
+}
+
+.pricing-card {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+
+.cd-pricing-header h5 {
+  margin-bottom: 3px;
+  text-transform: uppercase;
+  background: #f1f1f1;
+  padding: 5px 0;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.cd-duration {
+  text-transform: uppercase;
+}
+
+.cd-pricing-header .cd-currency {
+  display: inline-block;
+  margin-top: 10px;
+  vertical-align: top;
+  font-size: 2rem;
+}
+
+.cd-pricing-header .cd-value {
+  font-size: 4rem;
+}
+
+.cd-pricing-body {
+  background-color: rgba(23, 61, 80, 0.06);
+  float: none;
+  width: auto;
+  padding: 1em;
+}
+
+.cd-pricing-footer {
+  position: relative;
+  height: auto;
+  padding: 1.8em 0 1em 0;
+  text-align: center;
+}
+
+.cd-pricing-footer .cd-select {
+  position: static;
+  display: inline-block;
+  height: auto;
+  padding: 0.6em 2.6em;
+  color: #fff;
+  border-radius: 2px;
+  background-color: #0c1f28;
+  font-size: 1rem;
+  text-indent: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.additional-features-row, .final-price-calc-row {
+  margin: 1.5rem 0;
+  padding: 2rem 1rem;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+
+/* PRICING SECTION ENDS HERE */
 
 /* REVIEWS SECTION STARTS HERE */
 
@@ -133,14 +213,11 @@
 /* FREE DEMO BUTTON STARTS*/
 
 .free-demo-text {
-  padding-bottom: 2rem;
-  /* font-size: 2rem; */
+  padding-bottom: 1.5rem;
 }
 
 .free-demo-class {
-  /* margin-top: 1rem; */
-  padding-top: 3.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 1rem;
   margin-bottom: 2rem;
   background-color: #e8e8e8;
   width: 100%;
@@ -151,6 +228,7 @@
   color: #fff;
   background-color: #f79431;
   border-color: #f79431;
+  margin-bottom: 2rem;
 }
 
 .free-demo-button:hover {
