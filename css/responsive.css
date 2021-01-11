@@ -1,5 +1,5 @@
 /********************/
-/* RESPONSIVE SECTION - Website for small mobile devices*/
+/* RESPONSIVE SECTION */
 /*******************/
 
 @media only screen and (max-device-width: 768px) {
@@ -26,4 +26,60 @@
   .home-page {
     padding-top: 5.25rem;
   }
+}
+
+@media (max-width: 992px) {
+  /* REVIEWS SECTION - Responsive Start */
+
+  .person-name {
+    font-size: 0.85rem;
+  }
+
+  .person-firm {
+    font-size: 0.75rem;
+  }
+
+  .person-rating {
+    font-size: 0.8rem;
+  }
+
+  .review-date {
+    font-size: 0.75rem;
+  }
+
+  .review-master-text {
+    font-size: 0.7rem;
+  }
+
+  .review-card {
+    height: 11rem;
+  }
+
+  /* REVIEWS SECTION - Responsive End */
+}
+
+@media (max-width: 600px) {
+  /* REVIEWS SECTION - Responsive Start */
+
+  .person-name {
+    font-size: 0.75rem;
+  }
+
+  .person-firm {
+    font-size: 0.7rem;
+  }
+
+  .person-rating {
+    font-size: 0.75rem;
+  }
+
+  .review-date {
+    font-size: 0.7rem;
+  }
+
+  .review-master-text {
+    font-size: 0.65rem;
+  }
+
+  /* REVIEWS SECTION - Responsive End */
 }
