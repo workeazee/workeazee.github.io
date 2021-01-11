@@ -59,3 +59,13 @@
   display: flex;
   justify-content: center;
 }
+
+/* NAVBAR ID LINKS - For handling the links in navbar */
+
+#feature,
+#workflow,
+#review,
+#pricing,
+#contact-us {
+  scroll-margin-top: 5rem;
+}
