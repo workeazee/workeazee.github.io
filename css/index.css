@@ -9,6 +9,10 @@ body {
   font-family: "Lora", serif;
 }
 
+ul {
+  text-align: left;
+}
+
 /* AOS LIBRARY CHANGES - Duration Changes, Delay Changes */
 
 body[data-aos-delay="11000"] [data-aos],
