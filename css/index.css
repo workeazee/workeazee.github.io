@@ -9,6 +9,40 @@ body {
   font-family: "Lora", serif;
 }
 
+/* AOS LIBRARY CHANGES - Duration Changes, Delay Changes */
+
+body[data-aos-delay="11000"] [data-aos],
+[data-aos][data-aos][data-aos-delay="11000"] {
+  transition-delay: 11000ms;
+}
+
+body[data-aos-delay="9500"] [data-aos],
+[data-aos][data-aos][data-aos-delay="9500"] {
+  transition-delay: 9500ms;
+}
+
+body[data-aos-delay="8000"] [data-aos],
+[data-aos][data-aos][data-aos-delay="8000"] {
+  transition-delay: 8000ms;
+}
+
+body[data-aos-delay="6500"] [data-aos],
+[data-aos][data-aos][data-aos-delay="6500"] {
+  transition-delay: 6500ms;
+}
+
+body[data-aos-delay="5000"] [data-aos],
+[data-aos][data-aos][data-aos-delay="5000"] {
+  transition-delay: 5000ms;
+}
+
+body[data-aos-delay="3400"] [data-aos],
+[data-aos][data-aos][data-aos-delay="3400"] {
+  transition-delay: 3400ms;
+}
+
+/* AOS LIBRARY CHANGES END */
+
 body button,
 input {
   font-family: inherit;

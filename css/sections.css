@@ -21,6 +21,114 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
+/* WORK MANAGEMENT FLOW SECTION STARTS HERE */
+
+.rounded-circle {
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+}
+
+.employee-row {
+  margin-top: 2rem;
+}
+
+.employee-text {
+  font-weight: bold;
+  color: black;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.1rem;
+  font-size: 1.2rem;
+}
+
+.update-new-flow1 {
+  margin-top: -3rem;
+  margin-left: 0.8rem;
+}
+
+.update-new-flow2 {
+  margin-top: 3rem;
+  margin-left: 0.8rem;
+}
+
+.handle-employee-text {
+  font-size: 1.1rem;
+}
+
+.handle-employee-text-update {
+  font-size: 1.1rem;
+  margin-left: -2rem;
+}
+
+.tower-label1 {
+  z-index: -1;
+  position: relative;
+  margin-bottom: -4.5rem;
+}
+
+.tower-label2 {
+  z-index: -1;
+  position: relative;
+  margin-top: -5rem;
+}
+
+.tower-label3 {
+  z-index: -1;
+  position: relative;
+  height: 3rem;
+  margin-left: 3.5rem;
+}
+
+.tower-label4 {
+  z-index: -1;
+  height: 3rem;
+  position: relative;
+  margin-left: 3.5rem;
+}
+
+.flow-icon1 {
+  font-size: 6rem;
+  padding-top: 1.8rem;
+  color: white;
+}
+
+.flow-icon2 {
+  font-size: 5rem;
+  color: white;
+  padding-top: 1.8rem;
+}
+
+.flow-employee-icon1 {
+  height: 10rem;
+  width: 10rem;
+  background-color: #ff7058;
+}
+
+.flow-employee-icon2 {
+  margin-top: 10rem;
+  height: 10rem;
+  width: 10rem;
+  background-color: #ff7058;
+}
+
+.flow-employee-icon3 {
+  z-index: 10;
+  height: 9rem;
+  width: 9rem;
+  background-color: #ff7058;
+}
+
+.flow-employee-arrow {
+  padding-top: 14rem;
+  padding-left: 0.7rem;
+  font-size: 3rem;
+  color: #f79431;
+}
+
+/* WORK MANAGEMENT FLOW SECTION ENDS HERE */
+
 /* PRICING SECTION STARTS HERE */
 .form-input-number-of-users {
   margin: auto;
@@ -92,7 +200,8 @@
   letter-spacing: 2px;
 }
 
-.additional-features-row, .final-price-calc-row {
+.additional-features-row,
+.final-price-calc-row {
   margin: 1.5rem 0;
   padding: 2rem 1rem;
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
