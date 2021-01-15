@@ -19,6 +19,9 @@
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
 
+    <!-- AOS [Animate On Scroll Library]-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/all.css" />
 
@@ -150,23 +153,76 @@
         </div>
       </div>
 
-      <!-- FLOW SECTION -->
+      <!-- WORK MANAGEMENT FLOW SECTION -->
 
       <div id="workflow" class="container workflow-class">
         <div class="text-part">
-          <h1 class="main-heading">Work Flow</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            sodales mauris turpis, sed maximus magna egestas vitae. Vestibulum
-            lobortis ligula rhoncus diam consectetur, vitae efficitur nibh
-            fringilla. Sed gravida porttitor molestie. Sed pellentesque lectus
-            sed lacinia accumsan. Sed condimentum arcu risus, non convallis eros
-            tincidunt et. Curabitur elementum mi vitae elit accumsan aliquet.
-            Nam pellentesque molestie pulvinar. Nullam id mauris posuere,
-            sagittis lectus quis, commodo ante. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Morbi faucibus eros metus, sit amet
-            volutpat lorem bibendum ac.
-          </p>
+          <h1 class="main-heading">Work Management Flow</h1>
+          <div class="employee-row">
+            
+            <div class="row">
+
+              <div class="col-lg-1">
+              </div>
+
+              <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" class="col-lg-2 col-md-2 col-sm-12 col-xs-12 text-center">
+                <div class="employee-text">Create Task according to your Need</div>
+                <img class="tower-label1" src="images/work-flow/upper-label.png" alt="">               
+                <div class="rounded-circle flow-employee-icon1">
+                  <i class="flow-icon1 fas fa-tasks"></i>
+                </div>               
+              </div>
+
+              <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1400" class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+                <i class="fas fa-arrow-alt-circle-right flow-employee-arrow text-center"></i>
+              </div>
+
+              <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1400" class="col-lg-2 col-md-2 col-sm-12 col-xs-12 text-center">    
+                <div class="rounded-circle flow-employee-icon2">
+                  <i class="flow-icon1 far fa-envelope"></i>
+                </div>
+                <img class="tower-label2" src="images/work-flow/lower-label.png" alt="">
+                <div class="employee-text">Email Notification</div>           
+              </div>
+
+              <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="2400" class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+                <i class="fas fa-arrow-alt-circle-right flow-employee-arrow"></i>
+              </div>
+
+              <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="2400" class="col-lg-2 col-md-2 col-sm-12 col-xs-12 text-center handle-mobile-space">
+                <div class="col update-new-flow1">
+                  <div class="row employee-text handle-employee-text-update1">Update Tasks based on Predefined Tasks</div>
+                  <img class="row tower-label3" src="images/work-flow/upper-label.png" alt="">
+                  <div class="row">
+                    <div class="rounded-circle flow-employee-icon3">
+                      <i class="flow-icon2 far fa-calendar-alt"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col update-new-flow2">         
+                  <div class="row">
+                    <div class="rounded-circle flow-employee-icon3">
+                      <i class="flow-icon2 fas fa-trash-alt"></i>
+                    </div>
+                  </div>
+                  <img class="row tower-label4" src="images/work-flow/lower-label.png" alt="">
+                  <div class="row employee-text handle-employee-text-update2">Extend Deadlines and Delete Tasks</div>
+                </div>
+              </div>
+
+              <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="3400" class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+                <i class="fas fa-arrow-alt-circle-right flow-employee-arrow"></i>
+              </div>
+
+              <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="3400" class="col-lg-2 col-md-2 col-sm-12 col-xs-12 text-center">
+                <div class="rounded-circle flow-employee-icon2">
+                  <i class="flow-icon1 fas fa-check-circle"></i>
+                </div>
+                <img class="tower-label2" src="images/work-flow/lower-label.png" alt="">
+                <div class="employee-text">Task Completion</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -748,5 +804,34 @@
       </div>
     </footer>
     <!-- FOOTER SECTION ENDS HERE -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 1000, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+    </script>
+
   </body>
 </html>
