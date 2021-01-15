@@ -136,11 +136,17 @@
   margin: auto;
 }
 
-.pricing-cards {
+.pricing-class {
+  font-weight: 600;
+}
+
+.pricing-cards,
+.final-price-calcs {
   margin: 1.5rem 0;
 }
 
-.pricing-card {
+.pricing-card,
+.final-price-calc {
   padding-top: 2rem;
   padding-bottom: 2rem;
   padding-left: 1rem;
@@ -203,12 +209,27 @@
 }
 
 .additional-features-row,
-.final-price-calc-row {
+.final-price-calc {
   margin: 1.5rem 0;
   padding: 2rem 1rem;
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
     0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
   border-radius: 10px;
+}
+
+.final-price-calc h5,
+.additional-features-row h5 {
+  font-weight: 600;
+  color: #f79431;
+}
+
+.final-price-calc p,
+.final-price-calc span {
+  font-weight: bold;
+}
+
+.final-price-calc .row {
+  justify-content: space-between;
 }
 
 /* PRICING SECTION ENDS HERE */
