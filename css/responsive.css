@@ -28,6 +28,30 @@
   }
 }
 
+/* Why WorkEazee Section and Access WorkEazee from any device - Start */
+@media only screen and (max-device-width: 768px) {
+
+  .handle-gif-image {
+    height: 12rem;
+    width: 20rem;
+  }
+
+  .handle-gif-image2 {
+    height: 12rem;
+    width: 12rem;
+  }
+
+  .any-device-img {
+    height: 12rem;
+    width: 12rem;
+  }
+
+  .any-device-head-text {
+    padding: 0;
+  }
+}
+/* Why WorkEazee Section and Access WorkEazee from any device - End */
+
 /* TABLET AND iPAD  */
 
 @media (max-width: 992px) {
@@ -240,6 +264,7 @@
 
   .handle-mobile-space {
     margin-top: -4rem;
+    display: flex;
   }
 
   /* WORKFLOW SECTION - Responsive End */
