@@ -25,9 +25,7 @@
 /* WORK MANAGEMENT FLOW SECTION STARTS HERE */
 
 .rounded-circle {
-  border-color: black;
-  border-style: solid;
-  border-width: thin;
+  border: 0.125rem solid;
 }
 
 .employee-row {
@@ -65,7 +63,7 @@
 .tower-label1 {
   z-index: -1;
   position: relative;
-  margin-bottom: -4.5rem;
+  margin-bottom: -2.5rem;
 }
 
 .tower-label2 {
@@ -98,6 +96,10 @@
   font-size: 5rem;
   color: white;
   padding-top: 1.8rem;
+}
+
+.flow-employee {
+  background-color: #f79431;
 }
 
 .flow-employee-icon1 {
