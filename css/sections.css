@@ -136,8 +136,8 @@
   margin: auto;
 }
 
-.pricing-class {
-  font-weight: 600;
+.pricing-class .fancy-head-text{
+  font-weight: bold;
 }
 
 .pricing-cards,
