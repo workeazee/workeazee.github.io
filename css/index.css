@@ -1,12 +1,14 @@
 html {
   scroll-behavior: smooth;
   width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   background-color: #ffffff; /* Background color of whole body */
   font-family: "Lora", serif;
+  overflow-x: hidden;
 }
 
 ul {
