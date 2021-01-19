@@ -1,5 +1,13 @@
 /* MID SECTION - Sections after navbar */
 
+a {
+  color: black;
+}
+
+a:hover {
+  color: #f79431;
+}
+
 .feature-class,
 .workflow-class,
 .review-class,
@@ -9,12 +17,7 @@
   /* display: flex; */ /* CHANGED BECAUSE IT WAS AFFECTING THE CONTENT */
   /* align-items: center; */ /* CHANGED BECAUSE IT WAS AFFECTING THE CONTENT */
   width: 100%;
-  /* height: 15rem; Change this to change the length of the mid-section's containers for Navbar */
 }
-
-/* .text-part {
-  height: 30%; /* Change this to change the length of the mid-section's containers for Navbar
-} */
 
 /* Sections Heading */
 .main-heading {
@@ -136,7 +139,7 @@
   margin: auto;
 }
 
-.pricing-class .fancy-head-text{
+.pricing-class .fancy-head-text {
   font-weight: bold;
 }
 

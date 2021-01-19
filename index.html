@@ -37,7 +37,9 @@
       sizes="32x32"
     />
 
+    <!-- jQuery File -->
     <script src="js/jquery-3.5.1.min.js"></script>
+    
     <!-- Boostrap Script files -->
 
     <script
@@ -55,7 +57,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-
+   
     <script src="js/index.js"></script>
   </head>
 
@@ -99,9 +101,7 @@
           <li class="nav-item navpadding">
             <a class="nav-link ncolor" href="#pricing">Pricing</a>
           </li>
-          <li class="nav-item navpadding">
-            <a class="nav-link ncolor" href="#contact-us">Contact Us</a>
-          </li>
+          
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <a
@@ -793,53 +793,52 @@
       </div>
     </div>
 
-    <!-- CONTACT US SECTION -->
-
-    <div id="contact-us" class="container contact-us-class">
-      <div class="text-part">
-        <h1 class="main-heading">Contact Us</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          sodales mauris turpis, sed maximus magna egestas vitae. Vestibulum
-          lobortis ligula rhoncus diam consectetur, vitae efficitur nibh
-          fringilla. Sed gravida porttitor molestie. Sed pellentesque lectus sed
-          lacinia accumsan. Sed condimentum arcu risus, non convallis eros
-          tincidunt et. Curabitur elementum mi vitae elit accumsan aliquet. Nam
-          pellentesque molestie pulvinar. Nullam id mauris posuere, sagittis
-          lectus quis, commodo ante. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Morbi faucibus eros metus, sit amet volutpat lorem
-          bibendum ac.
-        </p>
-      </div>
-    </div>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-
     <!-- MID SECTION ENDS HERE  -->
 
     <!-- FOOTER SECTION STARTS HERE -->
     <footer>
-      <div class="container colorfooter">
-        <div class="handlefooter">
-          <img
-            class="footer-logo"
-            src="images/workEazee_with_stroke.png"
-            alt="stroke logo"
-          />
-          <img
-            class="footer-logo"
-            src="images/janus_softwares_logo.png"
-            alt="stroke logo"
-          />
-        </div>
+      <div class="footer-top">
+        <!-- <img class="footer-image" src="images/footer_img.jpg" alt="background image"> -->
+        <div class="container main-footer">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 footer-text-class">
+              <h4 class="footer-headings">Registered Office</h4>
+              <br>
+              <p class="address">Janus Softwares
+                (a division of Aum Metals & Techno Ceramics Pvt. Ltd.)
+              </p>
+              <p class="address">104/105, Manas Residency, A Wing,
+                Veer Savarkar Marg, Teen Petrol Pump,
+                Thane(W), Maharashtra, India – 400602
+              </p>
+              <p class="address">
+                Tel: +91 9769417465,
+                    +91 9029050299
+              </p>
+              <p class="address">
+                Email: janussoftwares@gmail.com
+              </p>
+            </div>
 
-        <div class="handlefooter">
+            <div class="col-lg-6 col-md-5 footer-text-class">
+              <h4 class="footer-headings locate-class">Locate Us</h4>
+              <br>
+              <iframe class="map-handle text-center" frameborder="0.1" aria-label="Map, Manas Residency" src="https://maps-api-ssl.google.com/maps?hl=en-US&amp;ll=19.192932,72.970477&amp;output=embed&amp;q=Manas+Residency,+Veer+Savarkar+Marg,+Naupada,+Thane+West,+Thane,+Maharashtra+400602,+India+(Manas+Residency)&amp;z=17" allowfullscreen=""></iframe>
+            </div>
+
+            <div class="col-lg-3 col-md-3 footer-text-class">
+              <h4 class="footer-headings download-class">Download Mobile App</h4>
+              <br>
+              <p class="address text-center">Scan QR Code</p>
+              <div class="text-center">
+                <img class="qrcode text-center" src="images/qr_code.png" alt="QR Code">
+              </div>
+              <p class="address text-center">Android</p>
+            </div>
+          </div>
+        </div>
+          
+        <div class="icon-footer-class">
           <div class="footer-icons">
             <a target="_blank" href="mailto:workeazee@gmail.com"
               ><i class="fas fa-envelope"></i
@@ -854,13 +853,30 @@
               href="https://www.linkedin.com/showcase/janussoftwares"
               ><i class="fab fa-linkedin-in"></i
             ></a>
+          </div> 
+        </div>
+      
+          <div class="container colorfooter">
+            <div class="handlefooter">
+              <img
+                class="footer-logo"
+                src="images/workEazee_with_stroke.png"
+                alt="stroke logo"
+              />
+              <img
+                class="footer-logo"
+                src="images/janus_softwares_logo.png"
+                alt="stroke logo"
+              />
+            </div>
+          </div>
+      </div>
+        <div class="footer-btm">
+          <div class="copyrighttext">  
+            <p>Copyright 2021, WorkEazee | All rights reserved | <a href="">Privacy Policy</a> | <a href="">Disclaimer</a></p>
+            <p class="design-text">Design : Janus Softwares Team</p>
           </div>
         </div>
-
-        <div class="copyrighttext">
-          <p>Copyright 2021, WorkEazee | All rights reserved</p>
-        </div>
-      </div>
     </footer>
     <!-- FOOTER SECTION ENDS HERE -->
 
@@ -869,27 +885,27 @@
       AOS.init();
 
       AOS.init({
-  // Global settings:
-  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-  initClassName: 'aos-init', // class applied after initialization
-  animatedClassName: 'aos-animate', // class applied on animation
-  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-  
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+        
 
-  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 120, // offset (in px) from the original trigger point
-  delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 1000, // values from 0 to 3000, with step 50ms
-  easing: 'ease', // default easing for AOS animations
-  once: false, // whether animation should happen only once - while scrolling down
-  mirror: false, // whether elements should animate out while scrolling past them
-  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
-});
+      });
     </script>
 
   </body>
