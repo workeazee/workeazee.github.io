@@ -6,9 +6,20 @@
 
 .copyrighttext {
   text-align: center;
+  padding-top: 1.5rem;
+}
+
+.design-text {
+  margin-top: -0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.icon-footer-class {
+  padding-top: 3.5rem;
 }
 
 .footer-icons {
+  text-align: center;
   display: inline;
   float: left;
   padding: 0.65rem 0;
@@ -42,4 +53,44 @@
   width: 10rem;
   height: 10rem;
   /* margin-bottom: -3rem; */
+}
+
+.map-handle {
+  margin-left: 14%;
+  height: 16rem;
+  width: 70%;
+}
+
+.footer-headings {
+  /* position: absolute; */
+  color: #f79431;
+  font-weight: bold;
+}
+
+.footer-top {
+  background-image: url("/images/background_footer.png"); /* FOR BACKGROUND IMAGE - Temporarily added */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-image {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-footer {
+  padding-top: 4rem;
+  z-index: 10;
+  /* position:absolute; */
+}
+
+.locate-class {
+  text-align: center;
+}
+
+.qrcode {
+  padding-bottom: 1rem;
 }
