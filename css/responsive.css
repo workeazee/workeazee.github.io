@@ -76,10 +76,6 @@
     font-size: 0.7rem;
   }
 
-  .review-card {
-    height: 11rem;
-  }
-
   /* REVIEWS SECTION - Responsive End */
 
   /* WORKFLOW SECTION - Responsive Start */
@@ -164,11 +160,6 @@
 
   .address {
     font-size: 14px;
-  }
-
-  .map-handle {
-    width: 100%;
-    margin-left: 0%;
   }
 
   .footer-headings {
@@ -308,14 +299,17 @@
     text-align: left;
   }
 
-  .map-handle {
-    height: 13rem;
-  }
-
   .qrcode {
     height: 5rem;
     width: 5rem;
   }
 
+  .footer-product-workeazee-img .container-for-image-and-title {
+    float: unset;
+  }
+
+  .container-for-image-and-title img{
+    margin: auto;
+  }
   /* FOOTER SECTION - Responsive End */
 }

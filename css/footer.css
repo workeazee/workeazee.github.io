@@ -1,7 +1,17 @@
 /* FOOTER SECTION */
 
-.handlefooter {
+.footer-product-workeazee-img {
+  text-align: right;
+}
+
+.container-for-image-and-title {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+}
+
+.footer-product-workeazee-img .container-for-image-and-title {
+  float: right;
 }
 
 .copyrighttext {
@@ -48,17 +58,25 @@
   border: 0.075rem solid#f79431;
 }
 
-.footer-logo {
+.workeazee-footer-logo {
   text-align: center;
   width: 10rem;
   height: 10rem;
-  /* margin-bottom: -3rem; */
+}
+
+.janus-footer-logo {
+  text-align: center;
+  width: 15rem;
+  height: 15rem;
 }
 
 .map-handle {
-  margin-left: 14%;
-  height: 16rem;
-  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.map-handle iframe {
+  height: 100%;
 }
 
 .footer-headings {
@@ -67,18 +85,24 @@
   font-weight: bold;
 }
 
+/* FOR BACKGROUND IMAGE - Temporarily added */
 .footer-top {
-  background-image: url("/images/background_footer.png"); /* FOR BACKGROUND IMAGE - Temporarily added */
+  /* background-image: url("/images/background_footer.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  background-color: #f7f7f7;
+  border-color: #080808;
+  /* border-bottom: 0.05rem solid; */
 }
 
+/* FOR BACKGROUND IMAGE - Temporarily added */
 .footer-image {
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: absolute;
 }
 
 .main-footer {
@@ -87,10 +111,14 @@
   /* position:absolute; */
 }
 
-.locate-class {
-  text-align: center;
-}
-
 .qrcode {
   padding-bottom: 1rem;
+}
+
+.footer-btm {
+  background: #f79431;
+}
+
+.footer-btm a:hover {
+  color: #ff0000;
 }
