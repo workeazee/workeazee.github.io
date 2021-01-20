@@ -1,12 +1,12 @@
 /* MID SECTION - Sections after navbar */
 
-a {
+/* .mid-section a {
   color: black;
 }
 
-a:hover {
+.mid-section a:hover {
   color: #f79431;
-}
+} */
 
 .feature-class,
 .workflow-class,
@@ -248,6 +248,7 @@ a:hover {
 
 .person-master-text {
   text-align: left;
+  flex-basis: unset;
 }
 
 .person-name {
@@ -263,6 +264,7 @@ a:hover {
   font-size: 0.8rem;
   font-weight: bold;
   text-align: justify;
+  letter-spacing: 0.03rem;
 }
 
 .star-icon {
@@ -272,6 +274,10 @@ a:hover {
 .review-date {
   font-size: 0.9rem;
   /* padding-top: 0.3rem; */
+}
+
+.person-rating-div {
+  flex-basis: unset;
 }
 
 .person-rating {
@@ -356,16 +362,19 @@ a:hover {
 
 .free-demo-button {
   font-size: 1rem;
-  color: #fff;
-  background-color: #f79431;
-  border-color: #f79431;
   margin-bottom: 2rem;
+  color: #f79431;
+  background-color: transparent;
+  background-image: none;
+  border: 0.125rem solid;
+  border-color: #f79431;
+  font-weight: 600;
 }
 
 .free-demo-button:hover {
-  color: #fff;
-  background-color: #ffc107;
-  border-color: #ffc107;
+  color: #ffffff;
+  background-color: #f79431;
+  border-color: #f79431;
 }
 
 /* FREE DEMO BUTTON ENDS*/
