@@ -17,6 +17,7 @@
 .copyrighttext {
   text-align: center;
   padding-top: 1.5rem;
+  padding-bottom: 0.1rem;
 }
 
 .design-text {
@@ -30,10 +31,7 @@
 
 .footer-icons {
   text-align: center;
-  display: inline;
-  float: left;
   padding: 0.65rem 0;
-  width: 100%;
   color: black;
   padding-bottom: 2rem;
 }
