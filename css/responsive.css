@@ -180,6 +180,11 @@
 /* MOBILE PHONE'S VIEW */
 
 @media (max-width: 600px) {
+  [data-aos-delay] {
+    /* ADDED TO REMOVE DELAY FROM ANIMATION IN MOBILE VIEW */
+    transition-delay: 0s !important;
+  }
+
   /* REVIEWS SECTION - Responsive Start */
 
   .person-name {
@@ -308,7 +313,7 @@
     float: unset;
   }
 
-  .container-for-image-and-title img{
+  .container-for-image-and-title img {
     margin: auto;
   }
   /* FOOTER SECTION - Responsive End */
