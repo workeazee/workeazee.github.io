@@ -1,822 +1,96 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WorkEazee</title>
+ <style>
+  body,
+  html {
+   height: 100%;
+   margin: 0;
+   font-style: italic;
+  }
 
-    <!-- CSS Style Sheets-->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <link rel="stylesheet" type="text/css" href="css/navbar.css" />
-    <link rel="stylesheet" type="text/css" href="css/sections.css" />
-    <link rel="stylesheet" type="text/css" href="css/footer.css" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+  .bgimg {
+   background: #f3f2ef;
+   height: 100%;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+   font-size: 28px;
+  }
 
-    <!-- AOS [Animate On Scroll Library]-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  .topleft {
+   position: absolute;
+   top: 0;
+   left: 16px;
+  }
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/all.css" />
+  .bottomleft {
+   position: absolute;
+   bottom: 0;
+   left: 16px;
+  }
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="icon"
-      href="images/workeazee_favicon_circle.png"
-      type="image/png"
-      sizes="32x32"
-    />
+  .middle {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+  }
 
-    <!-- jQuery File -->
-    <script src="js/jquery-3.5.1.min.js"></script>
-    
-    <!-- Boostrap Script files -->
+  hr {
+   margin: auto;
+   width: 40%;
+  }
+ </style>
+ <head>
+  <title>WorkEazee</title>
+  <link rel="stylesheet" type="text/css" href="css/page-styling.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="icon" href="images/workeazee_favicon_circle.png" type="image/png" sizes="32x32" />
+ </head>
+ <body>
+  <div class="bgimg">
+   <div class="topleft">
+    <img src="images/workeazee_logo.png" width="150" height="150" />
+   </div>
+   <div class="middle">
+    <h1>COMING SOON!</h1>
+    <hr />
+    <p id="demo" style="font-size: 30px;"></p>
+   </div>
+   <div class="bottomleft">
+    <p>Work Smart, WorkEazee!</p>
+   </div>
+  </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-   
-    <script src="js/index.js"></script>
-  </head>
+  <script>
+   // Set the date we're counting down to
+   var countDownDate = new Date("Jan 31, 2021 00:00:00").getTime();
 
-  <body onload="loadingFunction()">
+   // Update the count down every 1 second
+   var countdownfunction = setInterval(function () {
+    // Get todays date and time
+    var now = new Date().getTime();
 
-    <div id="loading-screen"></div>
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
 
-    <!-- NAVBAR SECTION STARTS HERE -->
-    <nav class="navbar navbar-light navbar-expand-lg page-navbar">
-      <a class="navbar-brand" href="#"
-        ><img
-          src="images/workEazee_with_stroke_mod.png"
-          width="120"
-          height="60"
-          alt="Company Logo"
-      /></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <!-- <li class="nav-item active navpadding">
-            <a class="nav-link ncolor" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li> -->
-          <!-- <li class="nav-item navpadding">
-            <a class="nav-link ncolor" href="#feature">Features</a>
-          </li> -->
-          <li class="nav-item navpadding">
-            <a class="nav-link ncolor" href="#workflow">Work Flow</a>
-          </li>
-          <li class="nav-item navpadding">
-            <a class="nav-link ncolor" href="#review">Reviews</a>
-          </li>
-          <li class="nav-item navpadding">
-            <a class="nav-link ncolor" href="#pricing">Pricing</a>
-          </li>
-          
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <a
-            class="btn btn-outline-mycolor formpadding"
-            target="_blank"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdHubwska8_6baEHI4BLs73ZoXNmHWoSdZbWpCoWdfhMtYlmg/viewform?usp=sf_link"
-            role="button"
-            >Request Demo</a
-          >
-          <a
-            class="btn btn-outline-success my-2 my-sm-0 formpadding"
-            target="_blank"
-            href="https://workeazee.pythonanywhere.com/"
-            role="button"
-            >Login</a
-          >
-        </form>
-      </div>
-    </nav>
-    <!-- NAVBAR SECTION ENDS HERE -->
-    <!-- HOME PAGE SECTION STARTS HERE  -->
-    <div class="home-page">
-      <img
-        class="background-logo"
-        src="images/home_background.jpeg"
-        alt="background
-        logo"
-      />
-    </div>
-    <!-- HOME PAGE SECTION ENDS HERE  -->
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    <!-- MID SECTION STARTS HERE  -->
-    <div class="mid-section">
-      <!-- FEATURES SECTION -->
-      <!-- <div id="feature" class="container feature-class">
-        <div class="text-part">
-          <h1 class="main-heading">Features</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            sodales mauris turpis, sed maximus magna egestas vitae. Vestibulum
-            lobortis ligula rhoncus diam consectetur, vitae efficitur nibh
-            fringilla. Sed gravida porttitor molestie. Sed pellentesque lectus
-            sed lacinia accumsan. Sed condimentum arcu risus, non convallis eros
-            tincidunt et. Curabitur elementum mi vitae elit accumsan aliquet.
-            Nam pellentesque molestie pulvinar. Nullam id mauris posuere,
-            sagittis lectus quis, commodo ante. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Morbi faucibus eros metus, sit amet
-            volutpat lorem bibendum ac.
-          </p>
-        </div>
-      </div> -->
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
-      <!-- WORK MANAGEMENT FLOW SECTION -->
-
-      <div id="workflow" class="container workflow-class">
-        <div class="text-part">
-          <h1 class="main-heading" data-aos="zoom-in-left">Work Flow</h1>
-          <div class="employee-row">
-            
-            <div class="row">
-
-              <div class="col-lg-1">
-              </div>
-
-              <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" class="col-lg-2 col-md-2 col-sm-12 col-xs-12 text-center">
-                <div class="employee-text">Create Tasks</div>
-                <img class="tower-label1" src="images/work-flow/upper-label.png" alt="">               
-                <div class="rounded-circle flow-employee flow-employee-icon1">
-                  <i class="flow-icon1 fas fa-tasks"></i>
-                </div>               
-              </div>
-
-              <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1400" class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
-                <i class="fas fa-arrow-alt-circle-right flow-employee-arrow text-center"></i>
-              </div>
-
-              <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1400" class="col-lg-2 col-md-2 col-sm-12 col-xs-12 text-center">    
-                <div class="rounded-circle flow-employee flow-employee-icon2">
-                  <i class="flow-icon1 far fa-envelope"></i>
-                </div>
-                <img class="tower-label2" src="images/work-flow/lower-label.png" alt="">
-                <div class="employee-text">Email Notifications</div>           
-              </div>
-
-              <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="2400" class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
-                <i class="fas fa-arrow-alt-circle-right flow-employee-arrow"></i>
-              </div>
-
-              <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="2400" class="col-lg-2 col-md-2 col-sm-12 col-xs-12 text-center handle-mobile-space">
-                <div class="col update-new-flow1">
-                  <div class="row employee-text handle-employee-text-update1">Update Tasks based on Predefined Status</div>
-                  <img class="row tower-label3" src="images/work-flow/upper-label.png" alt="">
-                  <div class="row">
-                    <div class="rounded-circle flow-employee flow-employee-icon3">
-                      <i class="flow-icon2 fas fa-user-edit"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="col update-new-flow2">         
-                  <div class="row">
-                    <div class="rounded-circle flow-employee flow-employee-icon3">
-                      <i class="flow-icon2 far fa-calendar-alt"></i>
-                    </div>
-                  </div>
-                  <img class="row tower-label4" src="images/work-flow/lower-label.png" alt="">
-                  <div class="row employee-text handle-employee-text-update2">Extend Deadlines and Delete Tasks</div>
-                </div>
-              </div>
-
-              <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="3400" class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
-                <i class="fas fa-arrow-alt-circle-right flow-employee-arrow"></i>
-              </div>
-
-              <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="3400" class="col-lg-2 col-md-2 col-sm-12 col-xs-12 text-center">
-                <div class="rounded-circle flow-employee flow-employee-icon2">
-                  <i class="flow-icon1 far fa-check-circle"></i>
-                </div>
-                <img class="tower-label2" src="images/work-flow/lower-label.png" alt="">
-                <div class="employee-text">Task Completion</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- WHY WORKEAZEE SECTION -->
-
-      <div class="container why-workeazee-class">
-        <h2 class="text-center why-workeazee-head-text" data-aos="fade-right">
-          Why Choose <span class="fancy-head-text">WorkEazee ?</span>
-        </h2>
-        <div class="row text-center">
-          <!-- ROW 1 -->
-          <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" data-aos="zoom-in-up">
-            <div class="why-workeazee-content">
-              <img
-                class="handle-gif-image"
-                src="images/why-workeazee/process-gif.gif"
-                alt="gif1"
-              />
-              <div class="why-workeazee-text-content">
-                <h5 class="font-weight-bold">
-                  Complete Process Management for Professionals
-                </h5>
-                <p>
-                  WorkEazee is a complete package that serves each and every
-                  business, professionals and entrepreneurs alike. From creating
-                  tasks, to receiving work related details, tracking work progress
-                  to business workflow and then ultimately its collection.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" data-aos="zoom-in-up">
-            <div class="why-workeazee-content">
-              <img
-                class="handle-gif-image"
-                src="images/why-workeazee/cloud-gif.gif"
-                alt="gif2"
-              />
-              <div class="why-workeazee-text-content">
-                <h5 class="font-weight-bold">Cloud Solution</h5>
-                <p>
-                  With WorkEazee you can run business on the go, as it can be
-                  accessed from anywhere and anytime using internet. That brings
-                  a whole lot of convenience for any size business from small to
-                  large, especially if your staffs are located at different onsite
-                  locations too.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row text-center">
-          <!-- ROW 2 -->
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" data-aos="zoom-in-up">
-            <div class="why-workeazee-content">
-              <img
-                class="handle-gif-image2"
-                src="images/why-workeazee/handshake-removebg.png"
-                alt="image-3"
-              />
-              <div class="why-workeazee-text-content">
-                <h5 class="font-weight-bold">
-                  Developed in a very practical way in line with Indian
-                  Circumstances
-                </h5>
-                <p>
-                  Every feature of WorkEazee has been developed keeping practical
-                  everyday situations of Indian business in backdrop. Constant
-                  inputs from actual professionals have thus been taken to perk-up
-                  and evolve the business software each day.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-            <div class="why-workeazee-content">
-              <img
-                class="handle-gif-image2"
-                src="https://picsum.photos/200/300"
-                alt="image/gif-4"
-              />
-              <div class="why-workeazee-text-content">
-                <h5 class="font-weight-bold">Siddhesh Shinde</h5>
-                <p>Dummy Text | Web Developer & Explorer</p>
-              </div>
-            </div>
-          </div> -->
-        </div>
-      </div>
-
-      <!-- REVIEWS SECTION -->
-
-      <div id="review" class="container review-class">
-        <div class="text-part">
-          <h2 class="main-heading" data-aos="zoom-in-left">Reviews</h2>
-          <div class="review-cards-container">
-            <div class="row">
-              <div
-                class="col-lg-4 col-md-6 col-sm-12 col-xs-12 px-lg-3 py-md-3 py-3"
-              >
-                <div class="review-card" data-aos="flip-down">
-                  <div class="row">
-                    <div class="col person-master-text">
-                      <div class="person-name">CA Sachin Shrinivas Bhattad</div>
-                      <div class="person-firm">SKVM Global</div>
-                    </div>
-                    <div class="col person-rating-div">
-                      <div class="person-rating">
-                        <div>
-                          <i class="fas fa-star star-icon"></i>
-                          <!-- FOR FILLED STAR -->
-                          <i class="fas fa-star star-icon"></i>
-                          <i class="fas fa-star star-icon"></i>
-                          <i class="fas fa-star star-icon"></i>
-                          <i class="far fa-star star-icon"></i>
-                          <!-- FOR UNFILLED STAR -->
-                        </div>
-                        <div class="review-date">Nov 01, 2020</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="review-master-text">
-                    <div>
-                      Managing tasks is much simpler due to the software. With it's easy to use UI, all my employees can use the software and report back to me without my intervention. WorkEazee has helped me to regain my time spent on following up tasks and become more productive.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-lg-4 col-md-6 col-sm-12 col-xs-12 px-lg-3 py-md-3 py-3"
-              >
-                <div class="review-card" data-aos="flip-down">
-                  <div class="row">
-                    <div class="col person-master-text">
-                      <div class="person-name">CA Rajeev Mundra</div>
-                      <div class="person-firm">Mundra And Associates</div>
-                    </div>
-                    <div class="col person-rating-div">
-                      <div class="person-rating">
-                        <div>
-                          <i class="fas fa-star star-icon"></i>
-                          <!-- FOR FILLED STAR -->
-                          <i class="fas fa-star star-icon"></i>
-                          <i class="fas fa-star star-icon"></i>
-                          <i class="fas fa-star star-icon"></i>
-                          <i class="far fa-star star-icon"></i>
-                          <!-- FOR UNFILLED STAR -->
-                        </div>
-                        <div class="review-date">Dec 15, 2020</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="review-master-text">
-                    <div>
-                      Using WorkEazee has been a productive advantage. I can get my monthly reports very quickly using the excel worksheet. Also giving updates to clients about thier work is also very easy. At a click of a button I get access to data about my own company which was earlier not tracked.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-lg-4 col-md-6 col-sm-12 col-xs-12 px-lg-3 py-md-3 py-3"
-              >
-                <div class="review-card" data-aos="flip-down">
-                  <div class="row">
-                    <div class="col person-master-text">
-                      <div class="person-name">CA Swati</div>
-                      <div class="person-firm">Mundra And Associates</div>
-                    </div>
-                    <div class="col person-rating-div">
-                      <div class="person-rating">
-                        <div>
-                          <i class="fas fa-star star-icon"></i>
-                          <!-- FOR FILLED STAR -->
-                          <i class="fas fa-star star-icon"></i>
-                          <i class="fas fa-star star-icon"></i>
-                          <i class="fas fa-star star-icon"></i>
-                          <i class="far fa-star star-icon"></i>
-                          <!-- FOR UNFILLED STAR -->
-                        </div>
-                        <div class="review-date">Dec 21, 2020</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="review-master-text">
-                    <div>
-                      Having a team under you which works on different clients and on different projects is not easy to handle. With WorkEazee I could easily track who was working on what project and didn't have to continuously disturb the  team to get updates. Managing a team is now much easier.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- AVAILABLE ON ANY DEVICE SECTION -->
-
-      <div class="container any-device-class">
-        <div class="text-part">
-          <h2 class="text-center any-device-head-text" data-aos="fade-right">
-            Access <span class="fancy-head-text">WorkEazee</span> from Any Device!
-          </h2>
-          <div class="row text-center">
-            <div class="col-lg-4 col-md-4 col-xs-4" data-aos="zoom-in-up">
-              <div>
-                <img
-                  class="any-device-img"
-                  src="images/any-device-image/Laptop_Desktop-removebg.png"
-                  alt="Desktop or Laptop"
-                />
-                <h4 class="any-device-text">Desktop / Laptop</h4>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-4" data-aos="zoom-in-up">
-              <div>
-                <img
-                  class="any-device-img"
-                  src="images/any-device-image/Mobile-removebg.png"
-                  alt="Mobile"
-                />
-                <h4 class="any-device-text">Mobile</h4>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-4" data-aos="zoom-in-up">
-              <div>
-                <img
-                  class="any-device-img"
-                  src="images/any-device-image/tablet-removebg.png"
-                  alt="Tablet"
-                />
-                <h4 class="any-device-text">Tab / iPad</h4>
-              </div>
-            </div>
-          </div>
-          <div class="text-center">
-            <a
-              target="_blank"
-              href="https://play.google.com/store/apps/details?id=com.aummetals.workeazee"
-            >
-              <img
-                data-aos="zoom-out"
-                class="playstore-logo"
-                src="images/any-device-image/play.png"
-                alt="Play Store Logo"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- FREE DEMO SECTION -->
-      <div class="container free-demo-class" data-aos="zoom-out">
-        <div class="free-demo-class text-center">
-          <h3 class="free-demo-text">Request Free Demo At Your Ease of Time</h3>
-          <a
-            target="_blank"
-            class="btn free-demo-button"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdHubwska8_6baEHI4BLs73ZoXNmHWoSdZbWpCoWdfhMtYlmg/viewform?usp=sf_link"
-            role="button"
-            >REQUEST FREE DEMO NOW</a
-          >
-        </div>
-      </div>
-
-      <!-- PRICING SECTION -->
-
-      <div id="pricing" class="container pricing-class">
-        <div class="text-part">
-          <h2 class="main-heading" data-aos="zoom-in-left">Pricing</h2>
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <p class="fancy-head-text">
-                Pricing starts after your free trial of 45 days!
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <h5>Calculate your price as per your needs ...</h5>
-            </div>
-          </div>
-          <div class="row text-center">
-            <div
-              class="form-input-number-of-users col-lg-3 col-md-3 col-sm-4 col-xs-4"
-            >
-              <div class="form-group font-weight-bold">
-                <label for="usersControlRange">NUMBER OF USERS</label>
-                <input
-                  type="number"
-                  value="5"
-                  min="2"
-                  max="100"
-                  class="form-control-range"
-                  id="usersControlRange"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="row text-center pricing-cards">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-              <div class="pricing-card pricing-six-months" data-aos="flip-left">
-                <header class="cd-pricing-header">
-                  <h5 class="font-weight-bold">6 MONTHS</h5>
-                  <div class="cd-price">
-                    <span class="cd-currency">₹ &nbsp;</span>
-                    <span class="cd-value" id="price-sec1">50</span>
-                    <span class="cd-duration">/user/month</span>
-                  </div>
-                </header>
-                <div class="cd-pricing-body">
-                  <span class="cd-currency">₹ &nbsp;</span
-                  ><span id="onetimecharges">3000 </span>&nbsp;One Time Installation Charges
-                </div>
-                <footer class="cd-pricing-footer">
-                  <a class="cd-select" href="#final-pricing" rel="6">Select</a>
-                </footer>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-              <div class="pricing-card pricing-twelve-months" data-aos="flip-right">
-                <header class="cd-pricing-header">
-                  <h5 class="font-weight-bold">12 MONTHS</h5>
-                  <div class="cd-price">
-                    <span class="cd-currency">₹ &nbsp;</span>
-                    <span class="cd-value" id="price-sec2">45</span>
-                    <span class="cd-duration">/user/month</span>
-                  </div>
-                </header>
-                <div class="cd-pricing-body">
-                  <span class="cd-currency">₹ &nbsp;</span
-                  ><span id="onetimecharges">3000 </span>&nbsp;One Time Installation Charges
-                </div>
-                <footer class="cd-pricing-footer">
-                  <a class="cd-select" href="#final-pricing" rel="12">Select</a>
-                </footer>
-              </div>
-            </div>
-          </div>
-          <div class="row additional-features-row" data-aos="zoom-in">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <h5>Choose additional features</h5>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-              <div class="form-check feature-1">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="defaultCheck1"
-                  checked
-                />
-                <label class="form-check-label" for="defaultCheck1">
-                  Email Notifications
-                </label>
-                <p class="price-display">
-                  <span class="cd-currency">₹ &nbsp;</span>
-                  <span class="cd-value" id="email-price-per-user-price">15</span>
-                  <span class="cd-duration">/user/month additional</span>
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-              <div class="form-check feature-2">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="defaultCheck2"
-                  checked
-                />
-                <label class="form-check-label" for="defaultCheck2">
-                  Same designation level control
-                </label>
-                <p class="price-display">
-                  <span class="cd-currency">₹ &nbsp;</span>
-                  <span class="cd-value" id="same-level-bulk-price">500</span>
-                  <span class="cd-duration">/year</span>
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-              <div class="form-check feature-3">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="defaultCheck3"
-                  checked
-                />
-                <label class="form-check-label" for="defaultCheck3">
-                  Track your work with charts
-                </label>
-                <p class="price-display">
-                  <span class="cd-currency">₹ &nbsp;</span>
-                  <span class="cd-value" id="track-work-charts-price">1500</span>
-                  <span class="cd-duration">/year</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row text-center final-price-calcs" id="final-pricing">
-            <!-- TO BE DONE -->
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-aos="zoom-in">
-              <div class="final-price-calc">
-                <h5>Your Final Package</h5>
-                <div class="final-package-container">
-                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="final-num-of-users row">
-                        <span class="final-price-users-label label">NUMBER OF USERS</span>
-                        <p class="final-price-users-value value">5</p>
-                    </div>
-                    <div class="final-num-of-months row">
-                      <span class="final-price-months-label label">NUMBER OF MONTHS</span>
-                      <p class="final-price-months-value value">12</p>
-                    </div>
-                    <div class="final-additional-features row">
-                      <span class="final-price-additonal-features-label label">ADDITIONAL FEATURES:</span>
-                      <ul class="final-features-list">
-                        <li class="feature-1"><span class="label">EMAIL NOTIFICATIONS</span></li>
-                        <li class="feature-2"><span class="label">SAME DESIGNATION LEVEL CONTROL</span></li>
-                        <li class="feature-3"><span class="label">TRACK YOUR WORK WITH CHARTS</span></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-aos="zoom-in">
-              <div class="final-price-calc">
-                <h5>Price Breakup</h5>
-                <div class="final-price-container">
-                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="final-one-time-costs row">
-                        <span class="final-one-time-costs-label label">ONE TIME INSTALLATION CHARGES</span>
-                        <p class="price-display">
-                          <span class="cd-currency">₹ &nbsp;</span>
-                          <span class="cd-value" id="final-one-time-cost"></span>
-                        </p>
-                    </div>
-                    <div class="final-recurring-costs row">
-                      <span class="final-recurring-label label">RECURRING CHARGES</span>
-                      <p class="price-display">
-                        <span class="cd-currency">₹ &nbsp;</span>
-                        <span class="cd-value" id="final-recurring-cost"></span>
-                      </p>
-                    </div>
-                    <div class="final-gst-costs row">
-                      <span class="final-gst-label label">GST AT 18%</span>
-                      <p class="price-display">
-                        <span class="cd-currency">₹ &nbsp;</span>
-                        <span class="cd-value" id="final-gst-cost"></span>
-                      </p>
-                    </div>
-                    <div class="final-total-costs row">
-                      <span class="final-total-label label">TOTAL COSTS</span>
-                      <p class="price-display">
-                        <span class="cd-currency">₹ &nbsp;</span>
-                        <span class="cd-value" id="final-total-cost"></span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- MID SECTION ENDS HERE  -->
-
-    <!-- FOOTER SECTION STARTS HERE -->
-    <footer>
-      <div class="footer-top" data-aos="zoom-in-up">
-        <!-- <img class="footer-image" src="images/background_footer.png" alt="background image"> -->
-        <div class="container main-footer">
-          <div class="row">
-            <div class="col-lg-4 col-md-4 footer-text-class font-weight-bold">
-              <h4 class="footer-headings text-center">Registered Office</h4>
-              <br>
-              <p class="companyname text-justify">Janus Softwares<br/>
-                (division of Aum Metals & Techno-Ceramics Pvt. Ltd.)
-              </p>
-              <p class="address text-justify">104/105, Manas Residency, A Wing, <br/>
-                Veer Savarkar Marg, Teen Petrol Pump, <br/>
-                Thane (W), Maharashtra, India – 400602
-              </p>
-              <p class="phone text-justify">
-                Tel: +91 9769417465,<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+91 9029050299
-              </p>
-              <p class="email-address text-justify">
-                Email: janussoftwares@gmail.com
-              </p>
-            </div>
-
-            <div class="col-lg-4 col-md-4 footer-text-class map-handle">
-              <h4 class="footer-headings locate-class text-center">Locate Us</h4>
-              <br>
-              <iframe class="text-center" frameborder="0.2" aria-label="Map, Manas Residency" src="https://maps-api-ssl.google.com/maps?hl=en-US&amp;ll=19.192932,72.970477&amp;output=embed&amp;q=Manas+Residency,+Veer+Savarkar+Marg,+Naupada,+Thane+West,+Thane,+Maharashtra+400602,+India+(Manas+Residency)&amp;z=17" allowfullscreen=""></iframe>
-            </div>
-
-            <div class="col-lg-4 col-md-4 footer-text-class">
-              <h4 class="footer-headings download-class text-center">Download Mobile App</h4>
-              <br>
-              <p class="scan-qr-code-text text-center font-weight-bold">Scan QR Code</p>
-              <div class="text-center">
-                <img class="qrcode text-center" src="images/qr_code.png" alt="QR Code">
-              </div>
-              <p class="android-text text-center font-weight-bold">Android</p>
-            </div>
-          </div>
-        </div>
-          
-        <div class="icon-footer-class">
-          <div class="footer-icons">
-            <a target="_blank" href="mailto:workeazee@gmail.com"
-              ><i class="fas fa-envelope"></i
-            ></a>
-            <a
-              target="_blank"
-              href="https://api.whatsapp.com/send?phone=919769417465"
-              ><i class="fab fa-whatsapp"></i
-            ></a>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/showcase/janussoftwares"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-          </div> 
-        </div>
-      
-          <div class="container colorfooter">
-            <div class="row">
-              <div class="col footer-product-workeazee-img" data-aos="zoom-out-right">
-                <div class="container-for-image-and-title">
-                  <img
-                    class="workeazee-footer-logo "
-                    src="images/workEazee_with_stroke.png"
-                    alt="stroke logo"
-                  />
-                  <span class="font-weight-bold">(by Janus Softwares)</span>
-                </div>
-              </div>
-              <div class="col footer-company-janus-img" data-aos="zoom-out-left">
-                <div class="container-for-image-and-title">
-                  <img
-                    class="janus-footer-logo"
-                    src="images/janus_softwares_logo.png"
-                    alt="stroke logo"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-btm font-weight-bold">
-          <div class="copyrighttext">
-          <!-- | <a href="">Privacy Policy</a> | <a href="">Disclaimer</a> -->
-            <p>Copyright © 2021, [WorkEazee | Janus Softwares] | All rights reserved</p>
-            <p class="design-text">Design : Janus Softwares Team</p>
-          </div>
-        </div>
-    </footer>
-    <!-- FOOTER SECTION ENDS HERE -->
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-      AOS.init({
-        // Global settings:
-        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-        initClassName: 'aos-init', // class applied after initialization
-        animatedClassName: 'aos-animate', // class applied on animation
-        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-        
-        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-        offset: 120, // offset (in px) from the original trigger point
-        delay: 0, // values from 0 to 3000, with step 50ms
-        duration: 1000, // values from 0 to 3000, with step 50ms
-        easing: 'ease', // default easing for AOS animations
-        once: true, // whether animation should happen only once - while scrolling down
-        mirror: false, // whether elements should animate out while scrolling past them
-        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-      });
-    </script>
-
-    <script>
-      var preloader = document.getElementById("loading-screen");
-      function loadingFunction() {
-          preloader.style.display = "none";
-      }
-    </script>
-  </body>
+    // If the count down is over, write some text
+    if (distance < 0) {
+     clearInterval(countdownfunction);
+     document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+   }, 1000);
+  </script>
+ </body>
 </html>
