@@ -1,0 +1,71 @@
+/* Navbar Class Section */
+
+.navbar-light {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.navbar-light.scrolled {
+  color: #000000;
+  background-color: #f3f2ef;
+  border-color: #080808;
+  box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.8);
+}
+
+/* Navbar Buttons */
+.btn-outline-mycolor {
+  color: #f79431;
+  background-color: transparent;
+  background-image: none;
+  border-color: #f79431;
+}
+
+.btn-outline-mycolor:hover {
+  color: #fff;
+  background-color: #f79431;
+  border-color: #f79431;
+}
+
+/* Navbar Padding */
+.navpadding {
+  font-size: 1.3rem;
+  padding-left: 0.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.navbar-light .navbar-nav .active .nav-link {
+  color: #ffffff;
+}
+
+.navbar-light.scrolled .navbar-nav .nav-link {
+  color: #000000;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #f79431;
+}
+
+.formpadding {
+  margin: 0 0.7rem;
+}
+
+.form-inline {
+  display: flex;
+  justify-content: center;
+}
+
+/* NAVBAR ID LINKS - For handling the links in navbar */
+
+#feature,
+#workflow,
+#review,
+#pricing,
+#contact-us {
+  scroll-margin-top: 5rem;
+}
