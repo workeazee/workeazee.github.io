@@ -80,7 +80,6 @@ $(document).ready(function () {
     var pricePerUserPerMonth = $(".pricing-card #price-sec2").text();
     if (numOfMonths == 6)
       pricePerUserPerMonth = $(".pricing-card #price-sec1").text();
-    console.log(pricePerUserPerMonth);
     if (finalPackageContainer.find(".final-price-users-value"))
       var recurringCharges = numOfUsers * numOfMonths * pricePerUserPerMonth;
     if (feature1)
