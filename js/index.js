@@ -112,4 +112,14 @@ $(document).ready(function () {
       1 * finalPriceContainer.find("#final-gst-cost").text();
     finalPriceContainer.find("#final-total-cost").text(totalCharges);
   }
+
+  /* JS FOR MODAL SECTION */
+
+  $(".disclaimer").click(function (e) {
+    $("#disclaimer-section").show();
+  });
+
+  $(".modal .close").click(function () {
+    $(".modal").hide();
+  });
 });
