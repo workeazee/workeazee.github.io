@@ -150,13 +150,12 @@
 
 .pricing-card,
 .final-price-calc {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 2rem 1rem;
+  margin-bottom: 0.75rem;
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
     0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
   border-radius: 10px;
+
 }
 
 .cd-pricing-header h5 {
