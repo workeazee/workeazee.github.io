@@ -13,7 +13,7 @@ You will need to perform the following steps to setup the project website.
 
 - You need to have an account on GitHub
 
-* [Git](http://git-scm.com) and/or the **GitHub app** (for [Mac](http://mac.github.com) or [Windows](http://windows.github.com)). [GitHub's Guide to Installing Git](https://help.github.com/articles/set-up-git) is a good source of information.
+* [Git](https://git-scm.com) and/or the **GitHub app** (for [Mac](https://mac.github.com) or [Windows](https://windows.github.com)). [GitHub's Guide to Installing Git](https://help.github.com/articles/set-up-git) is a good source of information.
 
 - [Chrome](https://www.google.com/chrome/browser/desktop/index.html), or any other web browser.
 
