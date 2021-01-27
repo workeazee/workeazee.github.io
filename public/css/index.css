@@ -125,23 +125,27 @@ input {
   text-align: right;
 }
 
-.disclaimer-head-text {
+.disclaimer-head-text,
+.privacy-head-text {
   font-size: 2rem;
   font-weight: bolder;
   text-align: center;
   color: #f79431;
 }
 
-.disclaimer-content {
+.disclaimer-content,
+.privacy-content {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
 
-.disclaimer-bottom-content {
+.disclaimer-bottom-content,
+.privacy-bottom-content {
   display: block;
 }
 
-.disclaimer:hover {
+.disclaimer:hover,
+.privacy:hover {
   color: red;
 }
 
