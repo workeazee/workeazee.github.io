@@ -118,6 +118,10 @@ $(document).ready(function () {
     $("#disclaimer-section").show();
   });
 
+  $(".privacy").click(function (e) {
+    $("#privacy-section").show();
+  });
+
   $(".modal .close").click(function () {
     $(".modal").hide();
   });

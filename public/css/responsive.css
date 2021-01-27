@@ -174,11 +174,13 @@
     text-align: center;
   }
 
-  .disclaimer-head-text {
+  .disclaimer-head-text,
+  .privacy-head-text {
     font-size: 1.5rem;
   }
 
-  .disclaimer-content {
+  .disclaimer-content,
+  .privacy-content {
     font-size: 0.9rem;
   }
 
@@ -326,12 +328,14 @@
     margin: auto;
   }
 
-  .disclaimer-head-text {
+  .disclaimer-head-text,
+  .privacy-head-text {
     font-size: 0.9rem;
     margin-top: -1.5rem;
   }
 
-  .disclaimer-content {
+  .disclaimer-content,
+  .privacy-content {
     font-size: 0.6rem;
     padding-top: 1rem;
     padding-bottom: 0.1rem;
